@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manuel Arias</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+
+</head>
+<body>
+
+<nav>
+    <p id="name"> Manuel Arias</p>
+</nav>
+
+<div id="info-container">
+
+    <span id="buttons-and-photo">
+
+        <button id="projects" class="btn redirect-button">Projects</button>
+
+        <img id="self-image" src="../images/self-image.jpg" alt="potrait" />
+
+        <button id="contact" class="btn redirect-button">Contact</button>
+
+    </span>
+
+    <p id="description"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium cupiditate distinctio ea earum est eveniet, facilis itaque neque non nulla officia pariatur quam quo sequi voluptate voluptatem. Iure, tempora!</span><span>Explicabo fugiat itaque omnis, praesentium quibusdam sint! Aspernatur, eum labore maxime nesciunt qui ratione sequi. Ab accusamus ea natus necessitatibus, nesciunt recusandae suscipit. Fugiat labore libero magnam magni recusandae reiciendis?</span><span>Ad alias deserunt doloremque ea illo, nisi, officia perferendis porro quos sed sit totam voluptatibus. Consequuntur dolorum earum eos, et iste minima, odit officia porro praesentium quam sapiente, suscipit voluptatum?</span><span>Alias animi aspernatur, at consequuntur cum iste magni nihil numquam reprehenderit. Adipisci ipsam labore nemo odio quis. Ab accusantium labore laborum nulla sapiente ullam? Beatae eaque ipsam iste molestiae recusandae.</span><span>Aliquid asperiores assumenda culpa cum, cumque delectus deserunt eos eum illo ipsam iusto laborum magni molestias nam natus nihil nobis numquam, odit quas rerum, sequi ullam unde ut veniam voluptas!</span></p>
+
+</div>
+
+<footer id="footer">Manuel Arias © 2019</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+
+    $("#projects").on("click", (e) => {
+        location.replace("/projects");
+    });
+
+    $("#contact").on("click", (e) => {
+        location.replace("/contact");
+    });
+
+</script>
+
+</html>

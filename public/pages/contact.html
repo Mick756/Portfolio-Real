@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manuel Arias</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+
+</head>
+<body>
+
+<nav>
+    <p id="name"> Manuel Arias</p>
+</nav>
+
+<div id="info-container">
+
+    <span id="buttons-and-photo">
+
+        <button id="about" class="btn redirect-button">Home</button>
+
+        <img id="self-image" src="../images/self-image.jpg" alt="potrait" />
+
+        <button id="projects" class="btn redirect-button">Projects</button>
+
+    </span>
+
+    <div id="contact-info-container">
+        <h2>Contant Information</h2>
+        <br>
+        <h4>Email: mick756@gmail.com</h4>
+        <h4>Phone (Mobile): +1 (480) 888-6952</h4>
+    </div>
+
+
+</div>
+
+<footer id="footer">Manuel Arias © 2019</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+
+    $("#about").on("click", (e) => {
+        location.replace("/");
+    });
+
+    $("#projects").on("click", (e) => {
+        location.replace("/projects");
+    });
+
+</script>
+
+</html>
