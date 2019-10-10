@@ -5,9 +5,20 @@ body {
 
 nav {
     margin-top: 15px;
+    margin-bottom: 40px;
     background-color: black;
     height: 60px;
     color: white;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5em 1em;
+    border: 5px solid black;
+}
+
+td {
+    font-size: 20px;
 }
 
 #name {
@@ -23,33 +34,30 @@ nav {
     background-color: black;
 }
 
-#info-container {
-    padding: 30px;
-    width: 90%;
-    margin: 30px auto;
-}
-
 #self-image {
     display: inline;
-    width: 40%;
+    width: 60%;
     border-radius: 100%;
-    margin: 0 auto;
+    margin: 0 20%;
 }
 
 #description {
     margin: 20px auto;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
 }
 
 #buttons-and-photo {
+    height: 30vh;
 }
 
 .redirect-button {
+    background-color: black;
     color: white;
-    margin: 0 auto;
+    margin: 5% 25%;
     font-size: 40px;
-    width: 29%;
+    width: calc(31% + 125px);
 }
 
 #contact-info-container {
@@ -77,6 +85,50 @@ nav {
 
 .section-title {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px 0;
+    text-align: center;
+}
+
+.download-link-container {
+    margin: 10px 35%;
+}
+
+.download-header {
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.download-button {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    width: calc(50% + 125px);
+}
+
+.downloads-form {
+    margin: 50px;
+    text-align: center;
+}
+
+.contact-header {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.contact-info {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.skills-container {
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.skills-table {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
 }

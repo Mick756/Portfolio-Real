@@ -5,8 +5,8 @@
     <title>Mick Arias</title>
 
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../styles/style.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -15,100 +15,150 @@
     <p id="name">Mick Arias</p>
 </nav>
 
-<div id="info-container">
+<div id="container">
 
-    <span id="buttons-and-photo">
+    <span>
 
-        <button id="about" class="btn redirect-button">About</button>
+        <div class="row buttons-and-photo">
+            <div class="col-4">
+                <button id="home" class="btn redirect-button">Home</button>
+                <br>
+                <button id="projects" class="btn redirect-button">Projects</button>
+                <br>
+                <button id="skills" class="btn redirect-button">Skills</button>
+            </div>
 
-        <img id="self-image" src="../images/self-image.jpg" alt="potrait" />
+            <div class="col-4">
+                <img id="self-image" src="../images/self-image.jpg" alt="portrait" />
+            </div>
 
-        <button id="contact" class="btn redirect-button">Contact</button>
+            <div class="col-4">
+                <button id="contact" class="btn redirect-button">Contact</button>
+                <br>
+                <button id="resume" class="btn redirect-button">Résumé</button>
+                <br>
+                <button id="social" class="btn redirect-button">Social</button>
+            </div>
+        </div>
 
     </span>
 
-    <h1 class="section-title">Web Development Projects</h1>
 
-    <div class="project-container">
-        <div class="project-title">Idioma</div>
-        <div class="project-description">
-            The Idioma project was designed to be a all-in-one language application. Using multiple libraries
-            Idioma can define, translate, and connote a word or phrase. This was a group project with Mick
-            handling the HTML and CSS elements as well as external libraries.</div>
-        <div class="project-link">
-            <a href="https://github.com/Mick756/Idioma">GitHub Link</a> - No Deployed Link (Local application)
-        </div>
-    </div>
+    <div style="padding: 20px">
+        <h1 class="section-title">Web Development Projects</h1>
 
-    <div class="project-container">
-        <div class="project-title">FoodDex</div>
-        <div class="project-description">
-            FoodDex was made with the intention to be an online food/recipe wall. With use of libraries such
-            as Node.js, Express, AWS S3, etc. the project allows anyone to post a recipe, with a photo,
-            description, and recipe for everyone to view. It is also equipped with a useful search bar
-            with the ability to search without specifics. This was a group project with Mick taking on
-            the HTML, CSS, AWS S3, and final touches of the JS.
+        <div class="project-container">
+            <div class="project-title">Friend Finder Remastered</div>
+            <div class="project-description">
+                This is my attempt at a social media platform based on taking a survey and comparing scores with others
+                to find the perfect friend. This plugin utilizes React, Express, Node.js, and is backed by a MongoDB.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/FriendFinderRemastered">GitHub Link</a> - <a href="https://friendfinderremastered.herokuapp.com/">Deployed
+                Link</a>
+            </div>
         </div>
-        <div class="project-link">
-            <a href="https://github.com/Mick756/FoodDex">GitHub Link</a> - <a href="https://fooddex.herokuapp.com/">Deployed Link</a>
-        </div>
-    </div>
 
-    <div class="project-container">
-        <div class="project-title">Word Guessing Game</div>
-        <div class="project-description">
-            The Word Guessing Game was a quick assignment to allow a user to play a nice game of Word Guess.
-            This game has a Minecraft theme with a very interactive GUI and a fun point system behind the game.
+        <div class="project-container">
+            <div class="project-title">Idioma</div>
+            <div class="project-description">
+                The Idioma project was designed to be a all-in-one language application. Using multiple libraries
+                Idioma can define, translate, and connote a word or phrase. This was a group project with Mick
+                handling the HTML and CSS elements as well as external libraries.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/Idioma">GitHub Link</a> - No Deployed Link (Local application)
+            </div>
         </div>
-        <div class="project-link">
-            <a href="https://github.com/Mick756/Word-Guess-Game">GitHub Link</a> - No Deployed Link (Local application)
-        </div>
-    </div>
 
-    <div class="project-container">
-        <div class="project-title">RPG Game</div>
-        <div class="project-description">
-            This RPG game has a Harry Potter theme that allows a player to choose a character and battle those
-            of the opposing side. This project is reliant on jQuery, JS, HTML, and CSS to provide an experience
-            with shielding, healing, and back and forth attacking. This has many moving parts and is still
-            very nice to the eye.
+        <div class="project-container">
+            <div class="project-title">FoodDex</div>
+            <div class="project-description">
+                FoodDex was made with the intention to be an online food/recipe wall. With use of libraries such
+                as Node.js, Express, AWS S3, etc. the project allows anyone to post a recipe, with a photo,
+                description, and recipe for everyone to view. It is also equipped with a useful search bar
+                with the ability to search without specifics. This was a group project with Mick taking on
+                the HTML, CSS, AWS S3, and final touches of the JS.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/FoodDex">GitHub Link</a> - <a href="https://fooddex.herokuapp.com/">Deployed
+                Link</a>
+            </div>
         </div>
-        <div class="project-link">
-            <a href="https://github.com/Mick756/RPG-Game">GitHub Link</a> - No Deployed Link (Local application)
-        </div>
-    </div>
 
-    <h1 class="section-title">Java Projects</h1>
-
-    <div class="project-container">
-        <div class="project-title">PartlyFancy</div>
-        <div class="project-description">
-            PartlyFancy is a Minecraft plugin using Java and the Minecraft API to create many cosmetic effects
-            for a server. This plugin using complex Java Math, Constructors, Reflection, etc. to build an
-            adaptable and efficient Java project.
+        <div class="project-container">
+            <div class="project-title">Word Guessing Game</div>
+            <div class="project-description">
+                The Word Guessing Game was a quick assignment to allow a user to play a nice game of Word Guess.
+                This game has a Minecraft theme with a very interactive GUI and a fun point system behind the game.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/Word-Guess-Game">GitHub Link</a> - No Deployed Link (Local
+                application)
+            </div>
         </div>
-        <div class="project-link">
-            <a href="https://github.com/Mick756/PartlyFancy">GitHub Link</a> - <a href="https://dev.bukkit.org/projects/partlyfancy">Plugin Page</a>
+
+        <div class="project-container">
+            <div class="project-title">RPG Game</div>
+            <div class="project-description">
+                This RPG game has a Harry Potter theme that allows a player to choose a character and battle those
+                of the opposing side. This project is reliant on jQuery, JS, HTML, and CSS to provide an experience
+                with shielding, healing, and back and forth attacking. This has many moving parts and is still
+                very nice to the eye.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/RPG-Game">GitHub Link</a> - No Deployed Link (Local application)
+            </div>
+        </div>
+
+        <h1 class="section-title">Java Projects</h1>
+
+        <div class="project-container">
+            <div class="project-title">PartlyFancy</div>
+            <div class="project-description">
+                PartlyFancy is a Minecraft plugin using Java and the Minecraft API to create many cosmetic effects
+                for a server. This plugin using complex Java Math, Constructors, Reflection, etc. to build an
+                adaptable and efficient Java project.
+            </div>
+            <div class="project-link">
+                <a href="https://github.com/Mick756/PartlyFancy">GitHub Link</a> - <a
+                    href="https://dev.bukkit.org/projects/partlyfancy">Plugin Page</a>
+            </div>
         </div>
     </div>
 
 </div>
 
 
-
-<footer id="footer">Manuel Arias © 2019</footer>
+<footer id="footer">Mick Arias © 2019</footer>
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 
-    $("#about").on("click", (e) => {
+    $("#home").on("click", (e) => {
         location.replace("/");
+    });
+
+    $("#projects").on("click", (e) => {
+        location.replace("/projects");
     });
 
     $("#contact").on("click", (e) => {
         location.replace("/contact");
+    });
+
+    $("#skills").on("click", (e) => {
+        location.replace("/skills");
+    });
+
+    $("#resume").on("click", (e) => {
+        location.replace("/resume");
+    });
+
+    $("#social").on("click", (e) => {
+        location.replace("/social");
     });
 
 </script>

@@ -11,40 +11,58 @@
 </head>
 <body>
 
-<nav>
-    <p id="name">Mick Arias</p>
-</nav>
+<div id="container info-container">
 
-<div id="info-container">
+    <nav>
+        <p id="name">Mick Arias</p>
+    </nav>
 
-    <span id="buttons-and-photo">
+    <span>
 
-        <button id="projects" class="btn redirect-button">Projects</button>
+        <div class="row buttons-and-photo">
+            <div class="col-4">
+                <button id="home" class="btn redirect-button">Home</button>
+                <br>
+                <button id="projects" class="btn redirect-button">Projects</button>
+                <br>
+                <button id="skills" class="btn redirect-button">Skills</button>
+            </div>
 
-        <img id="self-image" src="../images/self-image.jpg" alt="potrait" />
+            <div class="col-4">
+                <img id="self-image" src="../images/self-image.jpg" alt="portrait" />
+            </div>
 
-        <button id="contact" class="btn redirect-button">Contact</button>
+            <div class="col-4">
+                <button id="contact" class="btn redirect-button">Contact</button>
+                <br>
+                <button id="resume" class="btn redirect-button">Résumé</button>
+                <br>
+                <button id="social" class="btn redirect-button">Social</button>
+            </div>
+        </div>
 
     </span>
 
     <p id="description">
 
-        Mick Arias was born in San Diego, California on November 22, 2000 and moved to Arizona in
-        early 2002. He has been developing using Java since the age of 12 and in mid-2019 he joined
-        a programming BootCamp offered by UofA, sponsored by Trilogy, to receive his certification for
-        Full-Stack Web Development using technologies such as HTML, CSS, JavaScript, jQuery, Node.js,
-        Express, Handlebars, MySQL, MongoDB, and React.
+        Hello, my name is Mick Arias and I was born in San Diego, California on November 22, 2000 and moved to Arizona in <br>
+        early 2002. I am a passionate programmer with a continuous interest in programming that started in early 2013. I <br>
+        am capable of web design and formatting, server-side development, and basic level Java software development. <br>
 
     </p>
 
 </div>
 
-<footer id="footer">Manuel Arias © 2019</footer>
+<footer id="footer">Mick Arias © 2019</footer>
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">
+
+    $("#home").on("click", (e) => {
+        location.replace("/");
+    });
 
     $("#projects").on("click", (e) => {
         location.replace("/projects");
@@ -52,6 +70,18 @@
 
     $("#contact").on("click", (e) => {
         location.replace("/contact");
+    });
+
+    $("#skills").on("click", (e) => {
+        location.replace("/skills");
+    });
+
+    $("#resume").on("click", (e) => {
+        location.replace("/resume");
+    });
+
+    $("#social").on("click", (e) => {
+        location.replace("/social");
     });
 
 </script>
